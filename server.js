@@ -7,7 +7,7 @@ const knex = require('knex');
 const app = express();
 
 const api = new Clarifai.App({
-  apiKey: '11e4086b704f486ea9c9f99daca723b5'
+  apiKey: process.env.API_CLARIFAI
 });
 
 const db = knex({
